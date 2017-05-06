@@ -1,0 +1,219 @@
+HOW TO USE THE POSTAL GAME EDITOR (bare bones, basic necessities version):
+
+
+IMPORTANT NOTE: the editor is presented "as-is" and is not supported by Running With Scissors.  No technical support will be given.
+
+
+1. In the "realm" box, choose "new" to create a new level, or "open" to open
+an existing one.
+
+2. If you selected "new", type in the name of the background art you wish to
+use from the available list where it says "base name" to create a level on from this list.
+
+    Afb
+    bridge
+    CONSITE
+    Farm
+    Ghetto
+    Homer
+    Indust
+    mine
+    Newcity
+    parade
+    PARK
+    Salvage
+    Skirts
+    Trailer
+    train
+    Truck
+
+(*special cropped versions of some levels are also available for multiplayer matches.  The "realm files" [.rlm] for these should be in a directory called "multi".  To create new levels with the cropped background graphics, in the "new" window type "MP" before the name on the above list, (eg: MPafb) and chop any letters off the end that cause the name to be longer than 8 characters (eg: MPconsit). 
+
+
+2a. If you selected "open" a dialog will appear showing several directories.  what they
+ contain should be self-evident.  the directory called "buoynets" contains all the single
+ player levels with buoy networks, warps and soundthings already on them so that you
+ can get straight into adding enemies if you want.
+
+The "realm X rotation" and "scene X rotation" determine what angle the 3D
+objects are rendered at. For "side view" levels, set the values to: realm x =
+45, scene x = 30; for "top down" levels set both factors to 70 and make sure
+the "scale terrain map heights via view angle" and "use side view 2D assets"
+are NOT checked (these should be checked only on "side view" levels).
+
+You can also set the number of hostiles who must be killed in order to
+advance by implementing the "% of kills" box.
+
+3. Click "ok". The selected background art should now appear in the editing
+screen.
+
+4. Next, add a "warp", located in the "place object..." box. Select it and
+click on the background to "paste" it in. When creating a multiplayer level,
+add several of these points, at different locations, as they represent the
+position at which each player-character begins the game. This feature can
+also be utilized to generate random starting points in single player mode.
+
+Double-click on the warp to set its "stockpile". These contain the weapons,
+ammo, etc. with which you will enter the world of POSTAL. Edit any warp to
+re-set all the other warps on the same level to new settings.
+
+5. NAVNETS: A Navnet contains Buoys.  Buoys are linked together to create
+navigational paths that the hostiles use to find their way around obstacles
+
+The first Navnet (that round red thing that appears in the upper left corner
+of your world) is created by default. Any buoys you place will automatically
+be linked to the current Navnet. To place buoys, choose "Buoy" from the
+"place objects..." list, then move the cursor onto the edit screen and click
+on the location where you want the bouy to be placed (If you do not see the
+buoy, hit "B" to make them visible.)
+
+TIP: pressing the spacebar adds another of whatever the last selected item
+was. CAUTION: holding the spacebar down places MANY of those items! Be sure
+to only TAP the bar). Place as many buoys as you think necessarry (up to a
+max of 254). The number of buoys determines how much help the enemies will
+require to get around tricky obstacles.
+
+Link the bouys together by right clicking on one. A red line will appear.
+Drag this line over to the next buoy you want to link to and click. Now
+you'll see a green line linking the buoys. Note that you can link any buoy to
+as many other buoys as you want; in fact, the more links, the more realistic
+and unpredictable the enemy's movements will be. If you want, create multiple
+Navnets, each with its own discrete buoy system (this is useful if you want
+enemies to stay within a certain area).
+
+To create a new Navnet, select "Navnet" from the list, name it in the dialog
+that appears, and click it in, somewhere on the background art (doesn't
+matter where). Now, when you add buoys, the buoys are added to whichever
+Navnet is currently selected. You can toggle between existing Navnets by
+clicking on them in the "Navnets" box in the lower right of your screen.
+(IMPORTANT: When you start placing enemies, note that they are automatically
+linked to the currently selected Navnet and will ignore all others! Be
+careful that the intended Navnet is selected before placing enemies!)
+
+6. Notes about successful buoy nets: The main thing is to insure that the
+enemies have clear paths through tight spaces. Click on the "height" and "no
+walk" buttons in the "view attributes" box. This makes those attributes
+visible (as transparent green areas). Now you can see where movement will be
+blocked. Try to give the enemies as simple and straight a path as possible
+through tight spaces.
+
+7. Placing enemies: Select "person" from the "place objects..." list box.
+Move the cursor into the edit window and click them in. It always defaults to
+a grenade thrower, with a grenade, using "default.lgk" as his logic table.
+
+8. Editing enemy attributes: Double click on the enemy. A dialog will appear
+that controls all his attributes. On the left hand side is a list of various
+Personae. These characteristic sets alter the look and set of dialog audio
+that enemy will use. On the right is the list of available weapons. Below
+this is a dialog which indicates which logic table the hostile is using.
+Click on the "..." button to bring up a list of all available logic types and
+choose a new one if you wish. When you're done, click "ok" until the dialog
+goes away. Now the changes you've made will take effect.
+
+9. Logic tables: These control a variety of behavioral attributes such as:
+what to do when shot; agression levels, sensitivity (does the hostile care if
+his friends nearby get shot? Does he respond to Pylons (more on these later)?
+Does he roam or guard, etc.
+
+Here are a few examples:
+
+Guard: Stands his ground unless shot, then he will attack/and or attempt to
+move to a safer location from which to fire.
+
+Fodder: Detects player as soon as level begins and attempts to engage in
+battle at all costs.
+
+Victim: Does not fire weapons. If anyone nearby gets shot, they go into a
+panic and run around screaming.
+
+Panic: Same as above, except that as soon as these people appear on the
+world, they are alrerady in panic mode (good for generating those
+ever-popular screaming crowds exiting movie theatres, etc.)
+
+Protest: Protestor logic. In the "person" edit box you set which buoy numbers
+you want them to use as start and end points, and they will march back and
+forth between those posts until you shoot one of them, at which point they
+panic.
+
+Default: The most deluxe logic type, they hang around until you get in range,
+then they attack.  If they encounter any Pylons (see below) they will respond
+to whatever commands the pylons are set to.
+
+10. Pylons: These provide additional means to create specific behavior for
+enemies. Pylons are selected from the object list. Once you place a pylon,
+double click on it to edit its attributes, double RIGHT click on it to set
+it's trigger region.
+
+Pylons can be set to:
+
+* Popout: This defines a start point for an enemy to run out (to a target
+pylon with a "no message" set which must be defined) shoot, then return to
+the start point. This requires an enemy with a default, popout, or pop-only
+logic table. The logic table you choose will determine how easily  the enemy
+can be "distracted" from following the pylon's command.
+
+* Run-Shoot:  Set up two of these, each referencing the other, to provide a
+path along which the enemy will run back and forth, shooting at your
+player-character simultaneously (strafing as he runs) whenever he steps onto
+one of their trigger regions. This requires an enemy with default logic.
+
+* Safe: Enemies will see these as "cover" and try to hide there if they are
+wounded--and have a logic table that allows them to notice Pylons.
+
+11. Editing Pylon Trigger Regions:
+
+Double right click on a Pylon and a bounding square appears, centered on the
+Pylon. Use the arrow keys to position this square anywhere on the background
+art (<shift>, <ctrl>, and <alt> commands all speed up the square's movement).
+When you move the cursor into the square, a smaller square appears. This is
+your "brush"--use it to paint in the spots within the bounding square that
+you want to act as trigger regions for the Pylon's command. Increase the size
+of the brush with the "+" on the numeric keypad, or shrink it with "-". Hit
+"esc" when done.
+
+OTHER STUFF:
+
+Barrels: Double clicking brings up a dialog where you can set them to be
+destructable only by the player.
+
+Dispensers: These spew out whatever you select, in the quantities you choose,
+based on the following parameters: "Timed" (set min/max for randomness);
+"Exists" (new item only gets spewed after previous one dies. Set min/max to
+determine how long after death this occurs), or "Distance to Dude" (set
+trigger range, and min/max for time between spews while activated). When
+placed in the world, the dispenser will show an icon of the selected
+dispensee with a "25c" on him.
+
+Deleting Stuff: Select an item and hit "del"
+
+Deleting EVERYTHING except warps, navnets and soundthings: ctrl-D
+
+F11 brings up a list box showing all the objects in your level.  Clicking on
+ an item in the box selects it in the level.
+
+Shift-? allows you to scroll beyond the physical boundries of the level.  This
+ is useful to find objects which may have inadvertantly been pushed outside
+ the "world" by placing them on an area with "height" information, etc.  If this
+ occurs, the only way you can fix it is to hit tab repeatedly until the item is
+ selected, or select it in the F11 list box and then delete the offending item.
+  Objects outside the "world" cannot be selected by clicking on them with
+ the mouse.
+
+Demon: Adding one of these to the world creates that booming "FM DJ" voice
+that taunts the enemies and congratulates you while you play.
+
+Soundthing : These add in ambient sounds like wind, birds, phone sex, etc.
+
+To navigate around the background quickly, simply place the cursor inside the
+little "map" window, click and drag.
+
+The "layers" box: This turns on and off all the visible layers of the
+backgrounds. Useful for placing buoy nets behind buldings, etc.
+
+You can playtest your level from within the editor at any time by hitting "P", or
+ clicking on "play".  The level does not need to be saved before you do this.
+  When you're done playing, hit "esc" to return to the editor and resume editing
+ where you left off.
+
+Finally, remember to save often!
+

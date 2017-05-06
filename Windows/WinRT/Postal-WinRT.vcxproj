@@ -1,0 +1,1642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1ecc87cb-0b53-424e-9a14-cff82c5a3ad7}</ProjectGuid>
+    <Keyword>DirectXApp</Keyword>
+    <RootNamespace>Postal_WinRT</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>Postal-WinRT_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>7EEB1E1F1DF39669B5BD560A8F5209E0C00E7752</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;ALLOW_TWINSTICK;WITH_STEAMWORKS=0;DEBUG_LEVEL_CHEAT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal.log";NOSHMALLOC;TRACENASSERT;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;ALLOW_TWINSTICK;WITH_STEAMWORKS=0;DEBUG_LEVEL_CHEAT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal.log";NOSHMALLOC;TRACENASSERT;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;ALLOW_TWINSTICK;WITH_STEAMWORKS=0;DEBUG_LEVEL_CHEAT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal.log";NOSHMALLOC;TRACENASSERT;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dxgi.lib;ole32.lib;windowscodecs.lib;dwrite.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\CMain\include;$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>CMAIN_DYNAMIC;RSPIX_DYNAMIC;_WINSOCK_DEPRECATED_NO_WARNINGS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;LOCALE=US;TARGET=POSTAL_2015;WINRT;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.png" />
+    <Image Include="Assets\SmallLogo.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\SplashScreen.png" />
+    <Image Include="RES\CUTSCENE\ABSTRACT.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\BABOON.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\BLUEHEAD.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\CORRIDOR.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\DBLOOD.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\DHOLO.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\DREDEYE.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\FDOOR.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\FLASH.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\FOREST.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\GLASSGUY.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\GUY.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\HELLBRTH.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\JACKETBG.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\MASKFIRE.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\MONSTER.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\PIT.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\REAL2.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\RED2.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\TEXBEAST.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\TEXTEETH.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\TORTURE2.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\TOSSLE.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\TTLMOREX.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\CUTSCENE\WAR.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\EDITOR\CURSBASE.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\EDITOR\CURSTIP.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\EDITOR\DOWN.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="RES\EDITOR\UP.BMP">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game\include\band.h" />
+    <ClInclude Include="..\..\game\include\credits.h" />
+    <ClInclude Include="..\..\game\include\game.h" />
+    <ClInclude Include="..\..\game\include\input.h" />
+    <ClInclude Include="..\..\game\include\localize.h" />
+    <ClInclude Include="..\..\game\include\main.h" />
+    <ClInclude Include="..\..\game\include\menus.h" />
+    <ClInclude Include="..\..\game\include\play.h" />
+    <ClInclude Include="..\..\game\include\SampleMaster.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\alpha.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\AlphaAnimType.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\alphablitforpostal.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Anim3D.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\AnimThing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Average.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ball.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\barrel.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\bouy.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\BufQ.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\bulletFest.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\camera.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CapFlag_Gskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\character.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\chunk.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\collision.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CompileOptions.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\crawler.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CtrlBuf.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\cutscene.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\deathWad.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\demon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\dispenser.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\doofus.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\dude.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Econsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\encrypt.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\explode.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\fire.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\fireball.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\firebomb.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\flag.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\flagbase.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\gameedit.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\GameSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Gconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Goal_Gskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\grenade.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\grip.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\heatseeker.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\hood.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\IdBank.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettingsDlg.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\item3d.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\keys.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Log.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\logtab.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MemFileFest.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuTrans.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\message.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\mine.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mpskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\napalm.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\navnet.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\net.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netbrowse.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netclient.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetDlg.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetInput.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netmsgr.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netserver.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\organ.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ostrich.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Pconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\person.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\personatorium.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\PostalAttrib.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\PostalCommon_dll.hpp" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\PowerUp.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ProtoBSDIP.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\pylon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\reality.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\realm.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\rocket.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\scene.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\score.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\sentry.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\settings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\smash.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\SndRelay.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\socket.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\SoundThing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\sprites.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\StockPile.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TexEdit.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\thing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Thing3d.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\title.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\toolbar.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\trigger.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRegions.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRgn.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\update.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\warp.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\weapon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\yatime.h" />
+    <ClInclude Include="..\..\lib\WishPiX\Menu\menu.h" />
+    <ClInclude Include="..\..\lib\WishPiX\Prefs\prefline.h" />
+    <ClInclude Include="..\..\lib\WishPiX\Prefs\prefs.h" />
+    <ClInclude Include="..\..\lib\WishPiX\ResourceManager\resmgr.h" />
+    <ClInclude Include="..\..\lib\WishPiX\Spry\spry.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\game\source\aivars.cpp" />
+    <ClCompile Include="..\..\game\source\band.cpp" />
+    <ClCompile Include="..\..\game\source\credits.cpp" />
+    <ClCompile Include="..\..\game\source\game.cpp" />
+    <ClCompile Include="..\..\game\source\input.cpp" />
+    <ClCompile Include="..\..\game\source\localize.cpp" />
+    <ClCompile Include="..\..\game\source\main.cpp" />
+    <ClCompile Include="..\..\game\source\menus.cpp" />
+    <ClCompile Include="..\..\game\source\play.cpp" />
+    <ClCompile Include="..\..\game\source\SampleMaster.cpp" />
+    <ClCompile Include="..\..\game\source\title.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\alpha.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\alphablitforpostal.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Anim3D.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\AnimThing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ball.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\barrel.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\bouy.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\BufQ.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\bulletFest.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\camera.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\character.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\chunk.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\crawler.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\cutscene.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\deathWad.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\demon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\dispenser.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\doofus.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\dude.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\encrypt.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\explode.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\fire.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\fireball.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\firebomb.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\flag.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\flagbase.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\gameedit.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\GameSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\grenade.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\grip.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\heatseeker.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\hood.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\IdBank.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettingsDlg.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\item3d.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\keys.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Log.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\logtab.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MemFileFest.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuTrans.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\mine.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\napalm.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\navnet.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\net.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetBrowse.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetClient.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetDlg.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\netmsgr.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetServer.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\organ.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ostrich.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\person.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Personatorium.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\PowerUp.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ProtoBSDIP.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\pylon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\realm.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\rocket.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\scene.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\score.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\sentry.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\settings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\smash.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\SndRelay.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\socket.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\SoundThing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\StockPile.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\TexEdit.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\thing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Thing3d.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\toolbar.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\trigger.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\TriggerRegions.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\update.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\warp.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\weapon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\yatime.cpp" />
+    <ClCompile Include="..\..\lib\SDL2\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\lib\WishPiX\Menu\menu.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Prefs\prefline.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Prefs\prefs.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\ResourceManager\resmgr.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Spry\spry.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="..\..\lib\SDL2\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="Postal-WinRT_StoreKey.pfx" />
+    <None Include="Postal-WinRT_TemporaryKey.pfx" />
+    <None Include="POSTAL.INI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\ABSTRACT.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\BABOON.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\BLUEHEAD.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\CORRIDOR.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\DBLOOD.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\DHOLO.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\DREDEYE.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\FDOOR.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\FLASH.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\FOREST.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\GLASSGUY.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\GUY.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\HELLBRTH.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\JACKETBG.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\MASKFIRE.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\MONSTER.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\PIT.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\REAL2.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\RED2.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\TEXBEAST.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\TEXTEETH.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\TORTURE2.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\TOSSLE.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\TTLMOREX.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\CUTSCENE\WAR.MLP">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT0.DMO">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT1.DMO">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT2.DMO">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT3.DMO">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\ATTRIBS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BALL.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BAND.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BARREL.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BOUY.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BOUY_POP.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\BOUY_RS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\CAMERA.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\CAMERAS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\CLOCK.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\DISPENSE.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\EDITANIM.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\EDITDUDE.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\EDITHOOD.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\EDITPILE.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\FLAG.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\FLAGBASE.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\GRENADER.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\GUIS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\INFO.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\ITEM3D.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\LADDER.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\LAYERS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\MAP.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\MINE.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\NAVNETS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\NETWORK.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\PERSON.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\PICKOBJ.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\POWERUP.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\REALM.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\REALMBAR.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\RKTMAN.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\SENTRY.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\SNDRELAY.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\SOUND.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\STATS.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\TMPREALM.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\EDITOR\WARP.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\FONTS\SMASH.FNT">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\FONTS\SMSMASH.FNT">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\FONTS\SYSTEM1.FNT">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\FONTS\_SMASH.FNT">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\GAME\11025_16.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\GAME\GAME.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\AFB.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\BRIDGE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\CHAFB.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\CHBRIDGE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\CONSITE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\FARM.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\GHETTO.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\HOMER.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\HOVEL.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\INDUST.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MINE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPAFB.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPBRIDGE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPCITY.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPCONSIT.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPFARM.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPGHETTO.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPHOME.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPINDUST.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPPARADE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPPARK.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPSALVAG.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPSCHOOL.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPSKIRTS.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPTRAILE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPTRAIN.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\MPTRUCK.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\NEWCITY.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\PARADE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\PARK.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\SALVAGE.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\SCHOOL.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\SKIRTS.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\TRAILER.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\TRAIN.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\HOODS\TRUCK.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\AFBOUYS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\AFBOUYS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\BRIGBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\BRIGBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CITYBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CITYBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CONBOUYS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CONBOUYS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\FARMBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\FARMBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\GHETBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\GHETBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\HOMEBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\HOMEBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\INDUBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\INDUBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\MINEBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\MINEBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARABOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARABOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARKBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARKBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SALVBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SALVBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SKIRBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SKIRBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRAIBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRAIBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRALBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRALBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRUKBOUY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRUKBOUY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\CHBRIDGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\CHBRIDGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\GHETFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\GHETFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\HOMEFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\HOMEFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SALVFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SALVFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SKIRTFLG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SKIRTFLG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\TLRFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\TLRFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\CONFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\CONFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\GETALL.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\GETALL.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\MINERUN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\MINERUN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\SENTPARA.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\SENTPARA.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\TRKFLAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\TRKFLAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\BRIDGE25.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\BRIDGE25.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\FLAMER40.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\FLAMER40.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\KILL30.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\KILL30.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINE30.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINE30.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINEFIRE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINEFIRE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\POW30.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\POW30.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\AFBTIME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\AFBTIME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\CITYSLAY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\CITYSLAY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\EZNFAST.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\EZNFAST.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\FARMTIME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\FARMTIME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\PARKATTK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\PARKATTK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\SALVTIME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\SALVTIME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFCONSIT.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFCONSIT.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFTRAIN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFTRAIN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPAFB.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPAFB.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPBRIDGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPBRIDGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCITY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCITY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCONSIT.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCONSIT.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPFARM.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPFARM.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPGHETTO.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPGHETTO.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPHOME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPHOME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPINDUST.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPINDUST.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARADE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARADE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSALVAG.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSALVAG.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSCHOOL.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSCHOOL.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSKIRTS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSKIRTS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAILE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAILE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAIN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAIN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRUCK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRUCK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\REALMS.INI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EAFB.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EAFB.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EBRIDGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EBRIDGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECITY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECITY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECONSITE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECONSITE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EFARM.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EFARM.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EGHETTO.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EGHETTO.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EHOME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EHOME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EINDUST.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EINDUST.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EMINE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EMINE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARADE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARADE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESALVAGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESALVAGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESKIRTS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESKIRTS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAILR.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAILR.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAIN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAIN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRUCK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRUCK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HAFB.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HAFB.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HBRIDGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HBRIDGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCITY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCITY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCONSITE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCONSITE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HFARM.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HFARM.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HGHETTO.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HGHETTO.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HHOME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HHOME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HINDUST.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HINDUST.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HMINE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HMINE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARADE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARADE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSALVAGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSALVAGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSCHOOL.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSCHOOL.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSKIRTS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSKIRTS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAILR.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAILR.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAIN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAIN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRUCK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRUCK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\TSCHOOL.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\TSCHOOL.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\INDEX.RDX">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MAFB.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MAFB.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MBRIDGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MBRIDGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCITY.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCITY.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCONSITE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCONSITE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MFARM.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MFARM.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MGHETTO.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MGHETTO.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MHOME.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MHOME.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MINDUST.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MINDUST.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MMINE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MMINE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARADE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARADE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSALVAGE.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSALVAGE.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSKIRTS.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSKIRTS.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAILR.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAILR.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAIN.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAIN.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRUCK.RGN">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRUCK.RLM">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\BESERK.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\BOUY.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\CHILD.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\DEFAULT.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\FODDER.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\GUARD.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\HELPER.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\LURKFAR.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\LURKMED.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\PANIC.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\POPOUT.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\POP_ONLY.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\PROTEST.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\QUEENBEE.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\SRFODDR.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\STANDVIC.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\TEST3.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\TPOPOUT.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\LOGICS\VICTIM.LGK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\RES.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SAVEGAME\HIGH.INI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SAVEGAME\res.gme">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SHELL\BROWSER.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SHELL\CLIENT.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SHELL\SERVER.GUI">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="RES\SHELL\SHELL.SAK">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\lib\SDL2\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\SDL2\VisualC-WinRT\WinRT81_VS2013\SDL-WinRT81.vcxproj">
+      <Project>{c8df6173-06a1-4f56-a9bc-2002596b30e9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="CMain.vcxproj">
+      <Project>{632726fd-6e58-4d24-9702-a03d7155e28d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="RSPiX-WinRT.vcxproj">
+      <Project>{4bc730ac-27b0-4f13-b83e-e6122c40e1b3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="RES\EDITOR\EDITOR.TXT">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>

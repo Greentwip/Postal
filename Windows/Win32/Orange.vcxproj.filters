@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{558ebc0d-c0dc-463e-9e04-823b5e229cac}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{663011fa-e839-4d33-ac57-182a17eb1c1c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1c34d27e-2eb6-4015-95b9-82b2281c6ca1}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GameLib\ANIMSPRT.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Attribute\attribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\btn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Channel\channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\color\colormatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\DirtRect\DirtRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\color\dithermatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\File\file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\QuickMath\FixedPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\guiItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\IFF\iff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\ImageTools\lasso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Laymage\laymage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\ListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\ListContents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Meter\meter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\MsgBox\MsgBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\MTask\mtask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\MultiBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\MultiGrid\MultiGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\MultiGrid\MultiGridIndirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\ProcessGui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Debug\profile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\PushBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\QuickMath\QuickMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GameLib\Region.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\RString\rstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\scrollbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GameLib\SHAPES.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\Parse\SimpleBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GameLib\SPRITE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\str\str.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\..\..\lib\RSPiX\source\ORANGE\GUI\txt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gamelib\animsprt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\Attribute\Attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\Btn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\channel\channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\ORANGE\COLOR\COLORMATCH.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\dirtrect\dirtrect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\Gui\Dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\edit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\file\file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\quickmath\fixedpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\guiItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\iff\iff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\ImageTools\lasso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\Laymage\Laymage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\ListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\ListContents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\Meter\Meter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\MsgBox\MsgBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\MTask\MTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\multibtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\multigrid\multigrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\multigrid\multigridIndirect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\PushBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\quickmath\quickmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gamelib\region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\rstring\rstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\ScrollBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gamelib\shapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gamelib\sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\str\str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\..\..\lib\RSPiX\source\orange\gui\txt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

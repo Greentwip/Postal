@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized Debug|Win32">
+      <Configuration>Optimized Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(DebugLog)|Win32">
+      <Configuration>Release(DebugLog)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E38F582E-0BA8-452A-AC36-B84F68F9373C}</ProjectGuid>
+    <RootNamespace>Postal Common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Build\Postal Common\Release\</OutDir>
+    <IntDir>.\Build\Postal Common\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'">
+    <OutDir>.\Build\Postal Common\Release\</OutDir>
+    <IntDir>.\Build\Postal Common\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'">
+    <OutDir>.\Build\Postal Common\Optimized Debug\</OutDir>
+    <IntDir>.\Build\Postal Common\Optimized Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Build\Postal Common\Debug\</OutDir>
+    <IntDir>.\Build\Postal Common\Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\RSPiX\c\Win32\SmartHeap\Include;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\lib;$(ProjectDir)\..\..\game\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Build\Postal Common\Release/Postal Common.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Common\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Common\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Common\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Build\Postal Common\Release\Postal Common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\RSPiX\c\Win32\SmartHeap\Include;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\lib;$(ProjectDir)\..\..\game\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;TRACENASSERT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal Plus.log";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Build\Postal Common\Release/Postal Common.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Common\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Common\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Common\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Build\Postal Common\Release\Postal Common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\RSPiX\c\Win32\SmartHeap\Include;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\lib;$(ProjectDir)\..\..\game\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;TRACENASSERT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Build\Postal Common\Optimized Debug/Postal Common.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Common\Optimized Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Common\Optimized Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Common\Optimized Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Build\Postal Common\Optimized Debug\Postal Common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\lib;$(ProjectDir)\..\..\game\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOSHMALLOC;TRACENASSERT;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;DEBUG_LEVEL_CHEAT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal Plus.log";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Build\Postal Common\Debug/Postal Common.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Common\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Common\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Common\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Build\Postal Common\Debug\Postal Common.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\cursor1.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\eye.ico" />
+    <Image Include="res\guy.ico" />
+    <Image Include="res\mouth.ico" />
+    <Image Include="res\rws.ico" />
+    <Image Include="res\sign.ico" />
+    <Image Include="res\skull.ico" />
+    <Image Include="res\teeth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="WishPiX.vcxproj">
+      <Project>{99162fbf-8328-4ce6-b7fc-582ad11b3adf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\lib\PostalCommon\include\alpha.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\AlphaAnimType.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\alphablitforpostal.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Anim3D.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\AnimThing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Average.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ball.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\barrel.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\bouy.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\BufQ.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\bulletFest.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\camera.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CapFlag_Gskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\character.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\chunk.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\collision.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CompileOptions.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\crawler.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\CtrlBuf.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\cutscene.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\deathWad.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\demon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\dispenser.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\doofus.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\dude.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Econsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\encrypt.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\explode.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\fire.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\fireball.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\firebomb.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\flag.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\flagbase.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\gameedit.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\GameSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Gconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Goal_Gskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\grenade.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\grip.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\heatseeker.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\hood.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\IdBank.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettingsDlg.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\item3d.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\keys.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Log.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\logtab.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MemFileFest.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuSettings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuTrans.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\message.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\mine.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mpskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mskirts.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\napalm.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\navnet.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\net.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netbrowse.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netclient.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetDlg.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetInput.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netmsgr.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\netserver.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\organ.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ostrich.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Pconsite.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\person.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\personatorium.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\PostalAttrib.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\PowerUp.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\ProtoBSDIP.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\pylon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\reality.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\realm.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\rocket.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\scene.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\score.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\sentry.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\settings.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\smash.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\SndRelay.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\socket.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\SoundThing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\sprites.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\StockPile.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TexEdit.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\thing.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\Thing3d.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\title.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\toolbar.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\trigger.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRegions.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRgn.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\update.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\warp.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\weapon.h" />
+    <ClInclude Include="..\..\lib\PostalCommon\include\yatime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib\PostalCommon\source\alpha.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\alphablitforpostal.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Anim3D.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\AnimThing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ball.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\barrel.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\bouy.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\BufQ.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\bulletFest.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\camera.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\character.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\chunk.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\crawler.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\cutscene.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\deathWad.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\demon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\dispenser.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\doofus.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\dude.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\encrypt.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\explode.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\fire.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\fireball.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\firebomb.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\flag.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\flagbase.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\gameedit.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\GameSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\grenade.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\grip.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\heatseeker.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\hood.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\IdBank.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettingsDlg.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\item3d.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\keys.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Log.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\logtab.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MemFileFest.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuSettings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuTrans.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\mine.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\napalm.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\navnet.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\net.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetBrowse.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetClient.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetDlg.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\netmsgr.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetServer.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\organ.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ostrich.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\person.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Personatorium.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\PowerUp.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\ProtoBSDIP.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\pylon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\realm.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\rocket.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\scene.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\score.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\sentry.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\settings.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\smash.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\SndRelay.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\socket.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\SoundThing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\StockPile.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\TexEdit.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\thing.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\Thing3d.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\toolbar.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\trigger.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\TriggerRegions.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\update.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\warp.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\weapon.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\yatime.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

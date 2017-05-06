@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized Debug|Win32">
+      <Configuration>Optimized Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(DebugLog)|Win32">
+      <Configuration>Release(DebugLog)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{946C9D71-932C-47F0-99C8-2D54E502D921}</ProjectGuid>
+    <RootNamespace>Postal Plus</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Build\Postal Plus\Debug\</OutDir>
+    <IntDir>.\Build\Postal Plus\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>PostalD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\testing\</OutDir>
+    <IntDir>.\Build\Postal Plus\Release</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Postal</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'">
+    <OutDir>.\testing\</OutDir>
+    <IntDir>.\Build\Postal Plus\Release</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'">
+    <OutDir>.\Build\Postal Plus\Optimized Debug\</OutDir>
+    <IntDir>.\Build\Postal Plus\Optimized Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Build\Postal Plus\Debug/Postal Plus.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;NOSHMALLOC;TRACENASSERT;WIN32;_WINDOWS;LOCALE=US;TARGET=POSTAL_2015;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;DEBUG_LEVEL_CHEAT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal.log";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>RSPiX.H</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Build\Postal Plus\Debug/Postal Plus.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Plus\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Plus\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Plus\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;POSTAL_PLUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;WSock32.lib;WinMM.lib;SDL2.lib;SDL2main.lib;version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Testing\PostalD.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration);.\SDL2\libs\win32;.\steamworks\sdk\redistributable_bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Build\Postal Plus\Debug/Postal PlusD.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Build\Postal Plus\Release/Postal Plus.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;LOCALE=US;TARGET=POSTAL_2015;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Build\Postal Plus\Release/Postal Plus.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Plus\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Plus\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Plus\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;POSTAL_PLUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;WSock32.lib;WinMM.lib;SDL2.lib;SDL2main.lib;version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\testing\Postal.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.\SDL2\libs\win32;.\steamworks\sdk\redistributable_bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\Build\Postal Plus\Release/Postal Plus.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Build\Postal Plus\Release/Postal Plus.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\SDL2\include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;LOCALE=US;TARGET=POSTAL_PLUS;WITH_STEAMWORKS=0;ALLOW_TWINSTICK;TRACENASSERT;RSP_DEBUG_OUT_FILE;RSP_TRACE_LOG_NAME="Postal Plus.log";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Build\Postal Plus\Release/Postal Plus.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Plus\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Plus\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Plus\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;POSTAL_PLUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;WSock32.lib;WinMM.lib;SDL2.lib;SDL2main.lib;version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\testing\Postal Plus.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration);.\SDL2\libs\win32;.\steamworks\sdk\redistributable_bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\Build\Postal Plus\Release/Postal Plus.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Build\Postal Plus\Optimized Debug/Postal Plus.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\RSPiX\c\Win32\SmartHeap\Include;$(ProjectDir)\..\..\lib\RSPiX\source;$(ProjectDir)\..\..\lib\RSPiX\source\Blue;$(ProjectDir)\..\..\lib\RSPiX\include;$(ProjectDir)\..\..\lib\RSPiX\c\Win32\HeapAgent\Include;$(ProjectDir)\..\..\lib\steamworks\sdk\public;$(ProjectDir)\..\..\lib\PostalCommon\include;$(ProjectDir)\..\..\game\include;$(ProjectDir)\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;TRACENASSERT;WIN32;_WINDOWS;LOCALE=US;TARGET=POSTAL_PLUS;WITH_STEAMWORKS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>RSPiX.H</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Build\Postal Plus\Optimized Debug/Postal Plus.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Postal Plus\Optimized Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Postal Plus\Optimized Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Postal Plus\Optimized Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;POSTAL_PLUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;tapi32.lib;WSock32.lib;WinMM.lib;version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Build\Postal Plus\Optimized Debug/Postal PlusOD.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.\SDL2\libs\win32;.\steamworks\sdk\redistributable_bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Build\Postal Plus\Optimized Debug/Postal PlusOD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\cursor1.cur" />
+    <None Include="Postal Plus.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\eye.ico" />
+    <Image Include="res\guy.ico" />
+    <Image Include="res\mouth.ico" />
+    <Image Include="res\Postal Plus.ico" />
+    <Image Include="res\rws.ico" />
+    <Image Include="res\sign.ico" />
+    <Image Include="res\skull.ico" />
+    <Image Include="res\teeth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Postal Plus.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\Postal.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res;.\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Optimized Debug|Win32'">res;.\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res;.\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release(DebugLog)|Win32'">res;.\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\SDL2\VisualC\SDLmain\SDLmain.vcxproj">
+      <Project>{da956fd3-e142-46f2-9dd5-c78bebb56b7a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\SDL2\VisualC\SDL\SDL.vcxproj">
+      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
+    </ProjectReference>
+    <ProjectReference Include="BLiT.vcxproj">
+      <Project>{b34b944e-d7b4-48ea-900b-07e31b0b53f4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="BLiT3D.vcxproj">
+      <Project>{c2e9b53f-f81a-46c2-b1f5-9e62f7d14c81}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Blue.vcxproj">
+      <Project>{e5294c63-426a-4b28-8423-4799b6a9b510}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Cyan.vcxproj">
+      <Project>{faea86f3-327d-47b5-838b-307b885b3113}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Green.vcxproj">
+      <Project>{e38d3350-2c56-455d-8f1a-91862fb4824a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Orange.vcxproj">
+      <Project>{11eebb52-f1d7-4dd6-bb83-a34cc163f6e7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Postal Common.vcxproj">
+      <Project>{e38f582e-0ba8-452a-ac36-b84f68f9373c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="WishPiX.vcxproj">
+      <Project>{99162fbf-8328-4ce6-b7fc-582ad11b3adf}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\game\source\aivars.cpp" />
+    <ClCompile Include="..\..\game\source\band.cpp" />
+    <ClCompile Include="..\..\game\source\credits.cpp" />
+    <ClCompile Include="..\..\game\source\game.cpp" />
+    <ClCompile Include="..\..\game\source\input.cpp" />
+    <ClCompile Include="..\..\game\source\localize.cpp" />
+    <ClCompile Include="..\..\game\source\main.cpp" />
+    <ClCompile Include="..\..\game\source\menus.cpp" />
+    <ClCompile Include="..\..\game\source\play.cpp" />
+    <ClCompile Include="..\..\game\source\SampleMaster.cpp" />
+    <ClCompile Include="..\..\game\source\title.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game\include\band.h" />
+    <ClInclude Include="..\..\game\include\credits.h" />
+    <ClInclude Include="..\..\game\include\game.h" />
+    <ClInclude Include="..\..\game\include\input.h" />
+    <ClInclude Include="..\..\game\include\localize.h" />
+    <ClInclude Include="..\..\game\include\main.h" />
+    <ClInclude Include="..\..\game\include\menus.h" />
+    <ClInclude Include="..\..\game\include\play.h" />
+    <ClInclude Include="..\..\game\include\SampleMaster.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>f74b20d2-bc5c-4315-84f3-9fc95690265a</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9b40eb71-5942-4ce2-a602-8cb01dba7617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{42cc6fbc-2b12-4857-be7d-7d44617ba520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Postal Common Sources">
+      <UniqueIdentifier>{e97d1f12-b9ad-4782-92ae-ce72f59f434f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Postal Common Headers">
+      <UniqueIdentifier>{ecda23d9-ced5-4313-99cf-eab609c7ea45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WishPiX Sources">
+      <UniqueIdentifier>{5eeb603d-0067-46ad-b508-9ac07647844c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WisPiX Headers">
+      <UniqueIdentifier>{d7d6549a-9699-4dbb-81b5-c297684d0604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES">
+      <UniqueIdentifier>{4408c0a0-b8d3-4e5b-ac9a-801208379538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\SHELL">
+      <UniqueIdentifier>{ca7d5786-72ef-4f53-9f46-21c99be66db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\SAVEGAME">
+      <UniqueIdentifier>{32ede43e-1316-4bfa-ad0e-06960921086b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LOGICS">
+      <UniqueIdentifier>{48917a04-8d4f-4385-8cf0-e03c444d7f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS">
+      <UniqueIdentifier>{20b1751a-a924-4212-84b6-c648469afa52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\BOUYNETS">
+      <UniqueIdentifier>{959fc644-5611-4e29-88ed-bc690e1637d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\GAUNTLET">
+      <UniqueIdentifier>{3faa0fe2-4062-4c6c-9641-02890c86ab9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\GAUNTLET\CAPFLAG">
+      <UniqueIdentifier>{ae5438a5-e43f-4edd-96df-e15421f8b3a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\GAUNTLET\CHECKPT">
+      <UniqueIdentifier>{12b9398d-f800-4136-b57f-88f3ef8e848b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\GAUNTLET\GOAL">
+      <UniqueIdentifier>{b8c81f28-ca55-4f73-ac90-2671c8451e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\GAUNTLET\TIMED">
+      <UniqueIdentifier>{08935022-e4a3-4cf9-9f1a-f373897ff632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\MULTI">
+      <UniqueIdentifier>{affda402-fae1-4e06-8942-f6b6c3bf9140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\SINGLE">
+      <UniqueIdentifier>{63fad0c0-b665-4f17-8a53-690790f95292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\SINGLE\EASY">
+      <UniqueIdentifier>{0ac7b6ec-eb0d-48e5-8790-77ee069ad583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\SINGLE\MEDIUM">
+      <UniqueIdentifier>{3f5d914e-2a9c-43f9-8a49-93ce7671c2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\LEVELS\SINGLE\HARD">
+      <UniqueIdentifier>{e72348b2-1366-4328-b1da-6fdcd07c1644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\HOODS">
+      <UniqueIdentifier>{3c238889-9c29-4f73-8b87-c87d86687302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\GAME">
+      <UniqueIdentifier>{2c5f889b-8c96-4773-b974-fe16ea575e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\FONTS">
+      <UniqueIdentifier>{23f2277f-a70f-45d8-a784-1880fa151989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\EDITOR">
+      <UniqueIdentifier>{4aa4af9f-3a27-4b73-abcc-9cf6b129d295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\DEMOS">
+      <UniqueIdentifier>{d4bb5627-85c4-4f54-8555-c1668fbc003d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RES\CUTSCENE">
+      <UniqueIdentifier>{2e0f70c2-b558-498d-aa22-0961c31ecdf6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\game\source\aivars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\band.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\credits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\localize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\menus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\SampleMaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\game\source\title.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\SDL2\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\lib\PostalCommon\source\alpha.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\alphablitforpostal.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\Anim3D.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\AnimThing.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\ball.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\barrel.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\bouy.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\BufQ.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\bulletFest.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\camera.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\character.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\chunk.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\crawler.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\cutscene.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\deathWad.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\demon.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\dispenser.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\doofus.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\dude.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\encrypt.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\explode.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\fire.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\fireball.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\firebomb.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\flag.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\flagbase.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\gameedit.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\GameSettings.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\grenade.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\grip.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\heatseeker.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\hood.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\IdBank.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettings.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\InputSettingsDlg.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\item3d.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\keys.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\Log.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\logtab.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\MemFileFest.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuSettings.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\MenuTrans.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\mine.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\napalm.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\navnet.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\net.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetBrowse.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetClient.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetDlg.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\netmsgr.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\NetServer.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\organ.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\ostrich.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\person.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\Personatorium.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\PowerUp.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\ProtoBSDIP.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\pylon.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\realm.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\rocket.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\scene.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\score.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\sentry.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\settings.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\smash.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\SndRelay.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\socket.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\SoundThing.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\StockPile.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\TexEdit.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\thing.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\Thing3d.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\toolbar.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\trigger.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\TriggerRegions.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\update.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\warp.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\weapon.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\PostalCommon\source\yatime.cpp">
+      <Filter>Postal Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Menu\menu.cpp">
+      <Filter>WishPiX Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Prefs\prefline.cpp">
+      <Filter>WishPiX Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Prefs\prefs.cpp">
+      <Filter>WishPiX Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\ResourceManager\resmgr.cpp">
+      <Filter>WishPiX Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\WishPiX\Spry\spry.cpp">
+      <Filter>WishPiX Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game\include\band.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\credits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\localize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\menus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\play.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\game\include\SampleMaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\alpha.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\AlphaAnimType.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\alphablitforpostal.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Anim3D.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\AnimThing.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Average.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\ball.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\barrel.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\bouy.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\BufQ.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\bulletFest.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\camera.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\CapFlag_Gskirts.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\character.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\chunk.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\collision.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\CompileOptions.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\crawler.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\CtrlBuf.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\cutscene.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\deathWad.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\demon.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\dispenser.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\doofus.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\dude.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Econsite.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\encrypt.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\explode.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\fire.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\fireball.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\firebomb.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\flag.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\flagbase.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\gameedit.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\GameSettings.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Gconsite.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Goal_Gskirts.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\grenade.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\grip.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hconsite.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\heatseeker.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\hood.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Hskirts.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\IdBank.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettings.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\InputSettingsDlg.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\item3d.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\keys.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Log.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\logtab.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mconsite.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\MemFileFest.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuSettings.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\MenuTrans.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\message.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\mine.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mpskirts.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Mskirts.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\napalm.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\navnet.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\net.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\netbrowse.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\netclient.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetDlg.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\NetInput.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\netmsgr.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\netserver.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\organ.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\ostrich.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Pconsite.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\person.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\personatorium.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\PostalAttrib.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\PowerUp.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\ProtoBSDIP.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\pylon.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\reality.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\realm.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\rocket.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\scene.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\score.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\sentry.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\settings.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\smash.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\SndRelay.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\socket.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\SoundThing.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\sprites.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\StockPile.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\TexEdit.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\thing.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\Thing3d.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\title.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\toolbar.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\trigger.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRegions.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\TriggerRgn.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\update.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\warp.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\weapon.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\yatime.h">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\PostalCommon\include\PostalCommon_dll.hpp">
+      <Filter>Postal Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\WishPiX\Menu\menu.h">
+      <Filter>WisPiX Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\WishPiX\Prefs\prefline.h">
+      <Filter>WisPiX Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\WishPiX\Prefs\prefs.h">
+      <Filter>WisPiX Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\WishPiX\ResourceManager\resmgr.h">
+      <Filter>WisPiX Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\WishPiX\Spry\spry.h">
+      <Filter>WisPiX Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Postal-WinRT_TemporaryKey.pfx" />
+    <None Include="..\..\lib\SDL2\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="Postal-WinRT_StoreKey.pfx" />
+    <None Include="RES\RES.SAK">
+      <Filter>RES</Filter>
+    </None>
+    <None Include="POSTAL.INI" />
+    <None Include="RES\SHELL\BROWSER.GUI">
+      <Filter>RES\SHELL</Filter>
+    </None>
+    <None Include="RES\SHELL\CLIENT.GUI">
+      <Filter>RES\SHELL</Filter>
+    </None>
+    <None Include="RES\SHELL\SERVER.GUI">
+      <Filter>RES\SHELL</Filter>
+    </None>
+    <None Include="RES\SHELL\SHELL.SAK">
+      <Filter>RES\SHELL</Filter>
+    </None>
+    <None Include="RES\LOGICS\BESERK.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\BOUY.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\CHILD.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\DEFAULT.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\FODDER.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\GUARD.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\HELPER.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\LURKFAR.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\LURKMED.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\PANIC.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\POP_ONLY.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\POPOUT.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\PROTEST.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\QUEENBEE.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\SRFODDR.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\STANDVIC.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\TEST3.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\TPOPOUT.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\LOGICS\VICTIM.LGK">
+      <Filter>RES\LOGICS</Filter>
+    </None>
+    <None Include="RES\SAVEGAME\HIGH.INI">
+      <Filter>RES\SAVEGAME</Filter>
+    </None>
+    <None Include="RES\SAVEGAME\res.gme">
+      <Filter>RES\SAVEGAME</Filter>
+    </None>
+    <None Include="RES\LEVELS\REALMS.INI">
+      <Filter>RES\LEVELS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\AFBOUYS.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\AFBOUYS.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\BRIGBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\BRIGBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CITYBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CITYBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CONBOUYS.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\CONBOUYS.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\FARMBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\FARMBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\GHETBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\GHETBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\HOMEBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\HOMEBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\INDUBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\INDUBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\MINEBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\MINEBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARABOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARABOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARKBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\PARKBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SALVBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SALVBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SKIRBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\SKIRBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRAIBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRAIBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRALBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRALBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRUKBOUY.RGN">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\BOUYNETS\TRUKBOUY.RLM">
+      <Filter>RES\LEVELS\BOUYNETS</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\CHBRIDGE.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\CHBRIDGE.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\GHETFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\GHETFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\HOMEFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\HOMEFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SALVFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SALVFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SKIRTFLG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\SKIRTFLG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\TLRFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CAPFLAG\TLRFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CAPFLAG</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\CONFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\CONFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\GETALL.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\GETALL.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\MINERUN.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\MINERUN.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\SENTPARA.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\SENTPARA.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\TRKFLAG.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\CHECKPT\TRKFLAG.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\CHECKPT</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\BRIDGE25.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\BRIDGE25.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\FLAMER40.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\FLAMER40.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\KILL30.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\KILL30.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINE30.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINE30.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINEFIRE.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\MINEFIRE.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\POW30.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\GOAL\POW30.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\GOAL</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\AFBTIME.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\AFBTIME.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\CITYSLAY.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\CITYSLAY.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\EZNFAST.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\EZNFAST.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\FARMTIME.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\FARMTIME.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\PARKATTK.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\PARKATTK.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\SALVTIME.RGN">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\GAUNTLET\TIMED\SALVTIME.RLM">
+      <Filter>RES\LEVELS\GAUNTLET\TIMED</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFCONSIT.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFCONSIT.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFTRAIN.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\KFTRAIN.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPAFB.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPAFB.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPBRIDGE.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPBRIDGE.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCITY.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCITY.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCONSIT.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPCONSIT.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPFARM.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPFARM.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPGHETTO.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPGHETTO.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPHOME.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPHOME.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPINDUST.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPINDUST.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARADE.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARADE.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARK.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPPARK.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSALVAG.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSALVAG.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSCHOOL.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSCHOOL.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSKIRTS.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPSKIRTS.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAILE.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAILE.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAIN.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRAIN.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRUCK.RGN">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\MULTI\MPTRUCK.RLM">
+      <Filter>RES\LEVELS\MULTI</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\INDEX.RDX">
+      <Filter>RES\LEVELS\SINGLE</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EAFB.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EAFB.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EBRIDGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EBRIDGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECITY.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECITY.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECONSITE.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ECONSITE.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EFARM.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EFARM.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EGHETTO.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EGHETTO.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EHOME.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EHOME.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EINDUST.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EINDUST.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EMINE.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EMINE.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARADE.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARADE.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARK.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\EPARK.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESALVAGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESALVAGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESKIRTS.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ESKIRTS.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAILR.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAILR.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAIN.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRAIN.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRUCK.RGN">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\EASY\ETRUCK.RLM">
+      <Filter>RES\LEVELS\SINGLE\EASY</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HAFB.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HAFB.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HBRIDGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HBRIDGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCITY.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCITY.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCONSITE.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HCONSITE.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HFARM.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HFARM.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HGHETTO.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HGHETTO.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HHOME.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HHOME.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HINDUST.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HINDUST.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HMINE.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HMINE.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARADE.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARADE.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARK.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HPARK.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSALVAGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSALVAGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSCHOOL.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSCHOOL.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSKIRTS.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HSKIRTS.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAILR.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAILR.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAIN.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRAIN.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRUCK.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\HTRUCK.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\TSCHOOL.RGN">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\HARD\TSCHOOL.RLM">
+      <Filter>RES\LEVELS\SINGLE\HARD</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MAFB.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MAFB.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MBRIDGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MBRIDGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCITY.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCITY.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCONSITE.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MCONSITE.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MFARM.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MFARM.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MGHETTO.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MGHETTO.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MHOME.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MHOME.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MINDUST.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MINDUST.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MMINE.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MMINE.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARADE.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARADE.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARK.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MPARK.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSALVAGE.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSALVAGE.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSKIRTS.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MSKIRTS.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAILR.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAILR.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAIN.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRAIN.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRUCK.RGN">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\LEVELS\SINGLE\MEDIUM\MTRUCK.RLM">
+      <Filter>RES\LEVELS\SINGLE\MEDIUM</Filter>
+    </None>
+    <None Include="RES\HOODS\AFB.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\BRIDGE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\CHAFB.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\CHBRIDGE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\CONSITE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\FARM.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\GHETTO.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\HOMER.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\HOVEL.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\INDUST.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MINE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPAFB.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPBRIDGE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPCITY.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPCONSIT.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPFARM.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPGHETTO.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPHOME.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPINDUST.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPPARADE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPPARK.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPSALVAG.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPSCHOOL.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPSKIRTS.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPTRAILE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPTRAIN.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\MPTRUCK.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\NEWCITY.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\PARADE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\PARK.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\SALVAGE.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\SCHOOL.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\SKIRTS.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\TRAILER.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\TRAIN.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\HOODS\TRUCK.SAK">
+      <Filter>RES\HOODS</Filter>
+    </None>
+    <None Include="RES\GAME\11025_16.SAK">
+      <Filter>RES\GAME</Filter>
+    </None>
+    <None Include="RES\GAME\GAME.SAK">
+      <Filter>RES\GAME</Filter>
+    </None>
+    <None Include="RES\FONTS\_SMASH.FNT">
+      <Filter>RES\FONTS</Filter>
+    </None>
+    <None Include="RES\FONTS\SMASH.FNT">
+      <Filter>RES\FONTS</Filter>
+    </None>
+    <None Include="RES\FONTS\SMSMASH.FNT">
+      <Filter>RES\FONTS</Filter>
+    </None>
+    <None Include="RES\FONTS\SYSTEM1.FNT">
+      <Filter>RES\FONTS</Filter>
+    </None>
+    <None Include="RES\EDITOR\ATTRIBS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BALL.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BAND.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BARREL.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BOUY.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BOUY_POP.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\BOUY_RS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\CAMERA.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\CAMERAS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\CLOCK.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\DISPENSE.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\EDITANIM.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\EDITDUDE.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\EDITHOOD.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\EDITPILE.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\FLAG.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\FLAGBASE.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\GRENADER.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\GUIS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\INFO.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\ITEM3D.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\LADDER.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\LAYERS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\MAP.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\MINE.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\NAVNETS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\NETWORK.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\PERSON.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\PICKOBJ.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\POWERUP.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\REALM.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\REALMBAR.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\RKTMAN.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\SENTRY.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\SNDRELAY.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\SOUND.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\STATS.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\TMPREALM.RGN">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\EDITOR\WARP.GUI">
+      <Filter>RES\EDITOR</Filter>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT0.DMO">
+      <Filter>RES\DEMOS</Filter>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT1.DMO">
+      <Filter>RES\DEMOS</Filter>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT2.DMO">
+      <Filter>RES\DEMOS</Filter>
+    </None>
+    <None Include="RES\DEMOS\DEFAULT3.DMO">
+      <Filter>RES\DEMOS</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\ABSTRACT.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\BABOON.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\BLUEHEAD.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\CORRIDOR.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\DBLOOD.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\DHOLO.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\DREDEYE.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\FDOOR.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\FLASH.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\FOREST.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\GLASSGUY.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\GUY.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\HELLBRTH.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\JACKETBG.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\MASKFIRE.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\MONSTER.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\PIT.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\REAL2.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\RED2.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\TEXBEAST.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\TEXTEETH.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\TORTURE2.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\TOSSLE.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\TTLMOREX.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+    <None Include="RES\CUTSCENE\WAR.MLP">
+      <Filter>RES\CUTSCENE</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\lib\SDL2\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\EDITOR\CURSBASE.BMP">
+      <Filter>RES\EDITOR</Filter>
+    </Image>
+    <Image Include="RES\EDITOR\CURSTIP.BMP">
+      <Filter>RES\EDITOR</Filter>
+    </Image>
+    <Image Include="RES\EDITOR\DOWN.BMP">
+      <Filter>RES\EDITOR</Filter>
+    </Image>
+    <Image Include="RES\EDITOR\UP.BMP">
+      <Filter>RES\EDITOR</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\ABSTRACT.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\BABOON.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\BLUEHEAD.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\CORRIDOR.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\DBLOOD.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\DHOLO.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\DREDEYE.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\FDOOR.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\FLASH.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\FOREST.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\GLASSGUY.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\GUY.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\HELLBRTH.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\JACKETBG.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\MASKFIRE.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\MONSTER.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\PIT.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\REAL2.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\RED2.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\TEXBEAST.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\TEXTEETH.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\TORTURE2.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\TOSSLE.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\TTLMOREX.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+    <Image Include="RES\CUTSCENE\WAR.BMP">
+      <Filter>RES\CUTSCENE</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="RES\EDITOR\EDITOR.TXT">
+      <Filter>RES\EDITOR</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
